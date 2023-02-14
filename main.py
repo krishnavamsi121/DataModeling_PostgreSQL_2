@@ -1,5 +1,6 @@
 import psycopg2
 from config import config
+from create_tables import create_tables
 
 def connect():
     conn = None
@@ -24,3 +25,4 @@ def connect():
 
 if __name__ == "__main__":
     connect()
+    create_tables()
