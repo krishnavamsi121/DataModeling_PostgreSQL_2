@@ -32,7 +32,7 @@ def create_tables():
     CREATE TABLE PART_DRAWINGS(
     part_id INTEGER NOT NULL,
     file_extension varchar(5) NOT NULL,
-    drawing_data BYTES NOT NULL,
+    drawing_data BYTEA NOT NULL,
     FOREIGN KEY (part_id)
         REFERENCES parts (part_id)
         ON UPDATE CASCADE ON DELETE CASCADE
